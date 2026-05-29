@@ -92,6 +92,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Сладкие новогодние подарки оптом для бизнеса" },
+      { name: "description", content: "B2B website for wholesale New Year sweet gift sets, generating leads for corporate clients." },
+      { property: "og:description", content: "B2B website for wholesale New Year sweet gift sets, generating leads for corporate clients." },
+      { name: "twitter:description", content: "B2B website for wholesale New Year sweet gift sets, generating leads for corporate clients." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/de522b29-3e21-4337-8026-a6cf43cfc38b/id-preview-99cd68d2--f4c0e613-737b-4610-a7bb-a193cc606eeb.lovable.app-1780083995440.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/de522b29-3e21-4337-8026-a6cf43cfc38b/id-preview-99cd68d2--f4c0e613-737b-4610-a7bb-a193cc606eeb.lovable.app-1780083995440.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
