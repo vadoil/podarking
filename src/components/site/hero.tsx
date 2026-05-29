@@ -1,9 +1,16 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ShieldCheck, Truck, Factory, Boxes } from "lucide-react";
+import { ArrowRight, ShieldCheck, Truck, Factory, Boxes, Mail, Send } from "lucide-react";
 import heroImg from "@/assets/hero-gifts.jpg";
 
-export function Hero({ onLead, onCatalog }: { onLead: () => void; onCatalog: () => void }) {
+type HeroProps = {
+  onLead: () => void;
+  onCatalog: () => void;
+  onLeadChannel?: (c: "email" | "telegram") => void;
+};
+
+export function Hero({ onLead, onCatalog, onLeadChannel }: HeroProps) {
+  const handleChannel = (c: "email" | "telegram") => (onLeadChannel ? onLeadChannel(c) : onLead());
   return (
     <section id="top" className="relative overflow-hidden">
       <div className="absolute inset-0 sparkle-bg opacity-60 pointer-events-none" />
@@ -30,22 +37,33 @@ export function Hero({ onLead, onCatalog }: { onLead: () => void; onCatalog: () 
             Любой бюджет, брендирование, доставка по&nbsp;всей России.
           </p>
 
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Button
-              size="lg"
-              onClick={onLead}
-              className="bg-bordeaux hover:bg-bordeaux/90 text-white rounded-full px-7 h-12 text-base shadow-card"
-            >
-              Получить каталог и&nbsp;прайс <ArrowRight className="ml-1.5 h-4 w-4" />
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
+          <div className="mt-8 rounded-2xl border hairline bg-card/80 p-4 shadow-soft backdrop-blur">
+            <div className="text-[11px] uppercase tracking-widest text-muted-foreground">
+              Получите презентацию с подарками, ценами и сроками
+            </div>
+            <div className="mt-3 grid gap-2 sm:grid-cols-2">
+              <Button
+                size="lg"
+                onClick={() => handleChannel("email")}
+                className="bg-bordeaux hover:bg-bordeaux/90 text-white rounded-full h-12 text-sm sm:text-base shadow-card"
+              >
+                <Mail className="mr-2 h-4 w-4" /> Получить по e-mail
+              </Button>
+              <Button
+                size="lg"
+                onClick={() => handleChannel("telegram")}
+                className="bg-evergreen hover:bg-evergreen/90 text-white rounded-full h-12 text-sm sm:text-base shadow-card"
+              >
+                <Send className="mr-2 h-4 w-4" /> Получить в Telegram
+              </Button>
+            </div>
+            <button
+              type="button"
               onClick={onCatalog}
-              className="rounded-full px-7 h-12 text-base border-foreground/15 hover:bg-cream"
+              className="mt-3 inline-flex items-center gap-1.5 text-xs font-medium text-muted-foreground hover:text-bordeaux"
             >
-              Рассчитать заказ
-            </Button>
+              или сразу посмотреть готовые наборы <ArrowRight className="h-3.5 w-3.5" />
+            </button>
           </div>
 
           <ul className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4 text-sm">
