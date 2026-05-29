@@ -14,7 +14,105 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      gift_sets: {
+        Row: {
+          audience: string
+          available: boolean
+          budget_tier: string
+          composition: string[]
+          created_at: string
+          description: string
+          id: string
+          image_url: string
+          min_qty: number
+          name: string
+          packaging_type: string
+          price_tiers: Json
+          sort_order: number
+          weight_g: number
+        }
+        Insert: {
+          audience?: string
+          available?: boolean
+          budget_tier?: string
+          composition?: string[]
+          created_at?: string
+          description?: string
+          id?: string
+          image_url?: string
+          min_qty?: number
+          name: string
+          packaging_type?: string
+          price_tiers?: Json
+          sort_order?: number
+          weight_g?: number
+        }
+        Update: {
+          audience?: string
+          available?: boolean
+          budget_tier?: string
+          composition?: string[]
+          created_at?: string
+          description?: string
+          id?: string
+          image_url?: string
+          min_qty?: number
+          name?: string
+          packaging_type?: string
+          price_tiers?: Json
+          sort_order?: number
+          weight_g?: number
+        }
+        Relationships: []
+      }
+      leads: {
+        Row: {
+          budget: string | null
+          comment: string | null
+          company: string | null
+          created_at: string
+          email: string | null
+          id: string
+          inn: string | null
+          items: Json
+          name: string
+          phone: string
+          quantity: string | null
+          source: string
+          status: string
+        }
+        Insert: {
+          budget?: string | null
+          comment?: string | null
+          company?: string | null
+          created_at?: string
+          email?: string | null
+          id?: string
+          inn?: string | null
+          items?: Json
+          name: string
+          phone: string
+          quantity?: string | null
+          source?: string
+          status?: string
+        }
+        Update: {
+          budget?: string | null
+          comment?: string | null
+          company?: string | null
+          created_at?: string
+          email?: string | null
+          id?: string
+          inn?: string | null
+          items?: Json
+          name?: string
+          phone?: string
+          quantity?: string | null
+          source?: string
+          status?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
