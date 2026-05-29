@@ -20,7 +20,17 @@ const schema = z.object({
   inn: z.string().trim().max(20).optional().or(z.literal("")),
 });
 
-export function LeadDialog({ open, onOpenChange }: { open: boolean; onOpenChange: (o: boolean) => void }) {
+export type LeadChannel = "email" | "telegram" | null;
+
+export function LeadDialog({
+  open,
+  onOpenChange,
+  channel,
+}: {
+  open: boolean;
+  onOpenChange: (o: boolean) => void;
+  channel?: LeadChannel;
+}) {
   const { items, clear } = useRequestCart();
   const [form, setForm] = useState({
     name: "", company: "", phone: "+7 ", email: "", budget: "", quantity: "", comment: "", inn: "",
@@ -40,7 +50,12 @@ export function LeadDialog({ open, onOpenChange }: { open: boolean; onOpenChange
     }
     setSubmitting(true);
     try {
-      await submitLead({ ...r.data, items, source: items.length ? "lead_form_with_cart" : "lead_form" });
+      const src = channel === "telegram"
+        ? "lead_form_telegram"
+        : channel === "email"
+          ? "lead_form_email"
+          : items.length ? "lead_form_with_cart" : "lead_form";
+      await submitLead({ ...r.data, items, source: src });
       setDone(true);
       clear();
       toast.success("Заявка отправлена");
@@ -60,18 +75,27 @@ export function LeadDialog({ open, onOpenChange }: { open: boolean; onOpenChange
     }, 250);
   };
 
+  const title = done
+    ? "Спасибо!"
+    : channel === "telegram"
+      ? "Получить презентацию в Telegram"
+      : channel === "email"
+        ? "Получить презентацию на e-mail"
+        : "Получить расчёт и каталог";
+  const description = done
+    ? "Менеджер свяжется с вами в течение рабочего дня и пришлёт расчёт и каталог."
+    : channel === "telegram"
+      ? "Оставьте контакты — пришлём презентацию с подарками, ценами и сроками в Telegram."
+      : channel === "email"
+        ? "Оставьте контакты — пришлём презентацию с подарками, ценами и сроками на e-mail."
+        : "Заполните форму — пришлём подборку и коммерческое предложение в течение дня.";
+
   return (
     <Dialog open={open} onOpenChange={(o) => (o ? onOpenChange(true) : close())}>
       <DialogContent className="max-w-lg bg-background max-h-[92vh] overflow-y-auto">
         <DialogHeader>
-          <DialogTitle className="font-display text-2xl sm:text-3xl">
-            {done ? "Спасибо!" : "Получить расчёт и каталог"}
-          </DialogTitle>
-          <DialogDescription>
-            {done
-              ? "Менеджер свяжется с вами в течение рабочего дня и пришлёт расчёт и каталог."
-              : "Заполните форму — пришлём подборку и коммерческое предложение в течение дня."}
-          </DialogDescription>
+          <DialogTitle className="font-display text-2xl sm:text-3xl">{title}</DialogTitle>
+          <DialogDescription>{description}</DialogDescription>
         </DialogHeader>
 
         {done ? (
