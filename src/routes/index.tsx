@@ -1,29 +1,68 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useState } from "react";
+import { Toaster } from "@/components/ui/sonner";
+import { RequestCartProvider } from "@/hooks/use-request-cart";
+import { Header } from "@/components/site/header";
+import { Hero } from "@/components/site/hero";
+import { Segments } from "@/components/site/segments";
+import { Catalog } from "@/components/site/catalog";
+import { Constructor } from "@/components/site/constructor";
+import { Branding } from "@/components/site/branding";
+import { Advantages } from "@/components/site/advantages";
+import { Process } from "@/components/site/process";
+import { Cases } from "@/components/site/cases";
+import { Footer } from "@/components/site/footer";
+import { RequestCartSheet } from "@/components/site/request-cart-sheet";
+import { LeadDialog } from "@/components/site/lead-dialog";
+import { MobileStickyCTA } from "@/components/site/mobile-sticky-cta";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Your App" },
-      { name: "description", content: "Replace this with a one-sentence description of your app." },
-      { property: "og:title", content: "Your App" },
-      { property: "og:description", content: "Replace this with a one-sentence description of your app." },
+      { title: "Сладкие новогодние подарки оптом для бизнеса — Новогодний.Дом" },
+      {
+        name: "description",
+        content:
+          "Корпоративные новогодние подарки оптом: сладкие наборы с кондитерских заводов России и Беларуси. Брендирование, доставка по РФ, договор для юрлиц. От 350 ₽ / шт.",
+      },
+      { property: "og:title", content: "Сладкие новогодние подарки оптом для бизнеса" },
+      {
+        property: "og:description",
+        content:
+          "Сладкие наборы с заводов России и Беларуси. Брендирование, договор, доставка по РФ. От 350 ₽ / шт.",
+      },
     ],
   }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
+  const [leadOpen, setLeadOpen] = useState(false);
+  const openLead = () => setLeadOpen(true);
+  const scrollToCatalog = () =>
+    document.getElementById("catalog")?.scrollIntoView({ behavior: "smooth" });
+
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <RequestCartProvider>
+      <div className="min-h-screen flex flex-col">
+        <Header onLead={openLead} />
+        <main className="flex-1 pb-20 lg:pb-0">
+          <Hero onLead={openLead} onCatalog={scrollToCatalog} />
+          <Segments />
+          <Catalog />
+          <Constructor />
+          <Branding />
+          <Advantages />
+          <Process />
+          <Cases />
+        </main>
+        <Footer />
+
+        <RequestCartSheet onCheckout={openLead} />
+        <LeadDialog open={leadOpen} onOpenChange={setLeadOpen} />
+        <MobileStickyCTA onLead={openLead} />
+        <Toaster richColors position="top-center" />
+      </div>
+    </RequestCartProvider>
   );
 }
