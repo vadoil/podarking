@@ -176,4 +176,40 @@
       radial-gradient(circle at 85% 20%, color-mix(in oklab, var(--gold) 20%, transparent) 0 1px, transparent 2px);
     background-size: 240px 240px;
   }
+
+  @keyframes float-y {
+    0%, 100% { transform: translateY(0) rotate(var(--rot, 0deg)); }
+    50%      { transform: translateY(-14px) rotate(var(--rot, 0deg)); }
+  }
+  .animate-float { animation: float-y 6s ease-in-out infinite; }
+
+  @keyframes marquee-x {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+  .animate-marquee { animation: marquee-x 40s linear infinite; }
+
+  @keyframes shimmer-x {
+    0%   { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+  .text-shimmer {
+    background: linear-gradient(90deg,
+      var(--bordeaux) 0%,
+      var(--gold) 50%,
+      var(--bordeaux) 100%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shimmer-x 6s linear infinite;
+  }
+
+  .product-tile {
+    background:
+      radial-gradient(ellipse at top, color-mix(in oklab, var(--gold-soft) 65%, transparent), transparent 70%),
+      linear-gradient(180deg, var(--cream) 0%, color-mix(in oklab, var(--bordeaux) 5%, var(--cream)) 100%);
+  }
+  .tilt-on-hover { transition: transform .5s cubic-bezier(.2,.7,.2,1); }
+  .tilt-on-hover:hover { transform: translateY(-6px) rotate(-1.2deg); }
 }
