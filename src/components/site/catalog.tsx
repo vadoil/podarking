@@ -81,16 +81,16 @@ export function Catalog() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-60px" }}
                 transition={{ duration: 0.45, delay: (i % 3) * 0.05 }}
-                className="group flex flex-col overflow-hidden rounded-2xl border hairline bg-card shadow-soft hover:shadow-lift hover:-translate-y-1 transition-all"
+                className="group flex flex-col overflow-hidden rounded-2xl border hairline bg-card shadow-soft hover:shadow-lift tilt-on-hover"
               >
-                <div className="relative aspect-[4/3] overflow-hidden bg-muted">
+                <div className="relative aspect-[4/3] overflow-hidden product-tile">
                   <img
                     src={s.image_url}
                     alt={s.name}
                     loading="lazy"
-                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    className="absolute inset-0 h-full w-full object-contain p-5 transition-transform duration-700 group-hover:scale-[1.06] drop-shadow-[0_18px_24px_rgba(80,20,30,0.18)]"
                   />
-                  <div className="absolute left-3 top-3 flex gap-2">
+                  <div className="absolute left-3 top-3 z-10 flex gap-2">
                     <span className="rounded-full bg-background/90 px-2.5 py-1 text-[11px] font-medium text-bordeaux backdrop-blur">
                       {s.budget_tier}
                     </span>
@@ -98,7 +98,7 @@ export function Catalog() {
                       {s.packaging_type}
                     </span>
                   </div>
-                  <span className="absolute right-3 top-3 rounded-full bg-bordeaux/95 px-2.5 py-1 text-[11px] font-medium text-white">
+                  <span className="absolute right-3 top-3 z-10 rounded-full bg-bordeaux/95 px-2.5 py-1 text-[11px] font-medium text-white shadow-soft">
                     от {fmtNum(s.min_qty)} шт
                   </span>
                 </div>
