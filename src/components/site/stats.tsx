@@ -62,7 +62,7 @@ export function Stats() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.05 }}
-              className="bg-bordeaux/85 p-6 sm:p-8"
+              className="bg-evergreen/85 p-6 sm:p-8"
             >
               <div className="font-display text-4xl leading-none text-gold sm:text-5xl">
                 <CountUp end={s.value} decimals={s.decimals} suffix={s.suffix} />
