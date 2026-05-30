@@ -42,7 +42,7 @@ function CountUp({ end, decimals = 0, suffix = "" }: { end: number; decimals?: n
 export function Stats() {
   return (
     <section className="relative overflow-hidden py-20 sm:py-24">
-      <div className="absolute inset-0 -z-10 bg-festive" />
+      <div className="absolute inset-0 -z-10" style={{ background: "linear-gradient(135deg, color-mix(in oklab, var(--evergreen) 95%, black), color-mix(in oklab, var(--evergreen) 75%, var(--gold) 25%))" }} />
       <div className="absolute inset-0 -z-10 sparkle-bg opacity-30" />
       <div className="mx-auto max-w-7xl px-4 text-white sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
@@ -62,7 +62,7 @@ export function Stats() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.05 }}
-              className="bg-bordeaux/85 p-6 sm:p-8"
+              className="bg-evergreen/85 p-6 sm:p-8"
             >
               <div className="font-display text-4xl leading-none text-gold sm:text-5xl">
                 <CountUp end={s.value} decimals={s.decimals} suffix={s.suffix} />
