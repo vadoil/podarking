@@ -35,10 +35,24 @@ export function Hero({ onLead, onCatalog, onLeadChannel }: HeroProps) {
           transition={{ duration: 0.7, ease: "easeOut" }}
           className="relative z-10 flex flex-col justify-center"
         >
-          <span className="inline-flex w-fit items-center gap-2 rounded-full border border-gold/40 bg-gold-soft/50 px-3 py-1 text-xs font-medium text-bordeaux backdrop-blur">
-            <Sparkles className="h-3 w-3 text-gold" />
-            Сезон 2025–2026 · Принимаем заявки
-          </span>
+          <motion.span
+            initial={{ opacity: 0, y: -8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            className="group relative inline-flex w-fit items-center gap-2 overflow-hidden rounded-full border border-gold/50 bg-gradient-to-r from-gold-soft/70 via-white to-gold-soft/70 px-4 py-1.5 text-xs font-semibold text-bordeaux shadow-[0_8px_24px_-8px_rgba(191,149,63,0.45)] backdrop-blur"
+          >
+            <span aria-hidden className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/70 to-transparent animate-[shimmer-x_2.6s_ease-in-out_infinite]" />
+            <span className="relative flex h-4 w-4 items-center justify-center">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-gold/50 opacity-75" />
+              <Sparkles className="relative h-3.5 w-3.5 text-gold" />
+            </span>
+            <span className="relative tracking-wide">
+              Сезон <span className="text-shimmer font-display text-sm">2026–2027</span>
+              <span className="mx-2 text-gold/60">·</span>
+              Открыт приём заявок
+            </span>
+            <span className="relative ml-1 rounded-full bg-bordeaux px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-white shadow-sm">New</span>
+          </motion.span>
 
           <h1 className="font-display mt-6 text-[2.4rem] leading-[1.02] sm:text-5xl lg:text-[4rem]">
             Корпоративные<br />
