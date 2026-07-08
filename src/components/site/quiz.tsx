@@ -86,7 +86,7 @@ export function Quiz() {
             Персональный расчёт за 60 секунд
           </span>
           <h2 className="font-display mt-4 text-3xl sm:text-4xl lg:text-5xl">
-            Не знаете что выбрать? <span className="text-bordeaux">Подберём за вас</span>
+            Не знаете что выбрать?<br /> <span className="text-bordeaux">Подберём за вас</span>
           </h2>
           <p className="mt-3 text-muted-foreground">
             Ответьте на&nbsp;5 коротких вопросов - пришлём подборку с&nbsp;ценой за&nbsp;штуку под ваш тираж и&nbsp;КП с&nbsp;гарантией сроков.
