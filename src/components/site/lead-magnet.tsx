@@ -25,12 +25,12 @@ export function LeadMagnet({ onLead }: { onLead: (channel?: "email" | "telegram"
 
               <h2 className="font-display mt-4 text-3xl leading-tight sm:text-4xl lg:text-5xl">
                 Получите <span className="text-bordeaux">цены с завода</span><br />
-                — до&nbsp;того, как поднимутся все остальные
+                - до&nbsp;того, как поднимутся все остальные
               </h2>
 
               <ul className="mt-6 space-y-2 text-sm text-foreground/80">
                 {[
-                  "PDF-каталог на сезон 2025–2026",
+                  "PDF-каталог на сезон 2025-2026",
                   "Цены по тиражам от 500 до 10 000+ шт",
                   "Сроки производства и доставки по РФ",
                   "Примеры брендирования и упаковки",
@@ -71,7 +71,7 @@ export function LeadMagnet({ onLead }: { onLead: (channel?: "email" | "telegram"
                   </div>
                   <div className="flex-1">
                     <div className="font-display text-lg leading-tight">Получить в Telegram</div>
-                    <div className="text-xs text-muted-foreground">Напишем в @new_world10RM — заявка по новогодним подаркам</div>
+                    <div className="text-xs text-muted-foreground">Напишем в @new_world10RM - заявка по новогодним подаркам</div>
                   </div>
                 </div>
               </a>

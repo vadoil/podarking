@@ -85,10 +85,10 @@ export function LeadDialog({
   const description = done
     ? "Менеджер свяжется с вами в течение рабочего дня и пришлёт расчёт и каталог."
     : channel === "telegram"
-      ? "Оставьте контакты — пришлём презентацию с подарками, ценами и сроками в Telegram."
+      ? "Оставьте контакты - пришлём презентацию с подарками, ценами и сроками в Telegram."
       : channel === "email"
-        ? "Оставьте контакты — пришлём презентацию с подарками, ценами и сроками на e-mail."
-        : "Заполните форму — пришлём подборку и коммерческое предложение в течение дня.";
+        ? "Оставьте контакты - пришлём презентацию с подарками, ценами и сроками на e-mail."
+        : "Заполните форму - пришлём подборку и коммерческое предложение в течение дня.";
 
   return (
     <Dialog open={open} onOpenChange={(o) => (o ? onOpenChange(true) : close())}>
@@ -104,7 +104,7 @@ export function LeadDialog({
               <Check className="h-6 w-6" />
             </div>
             <p className="mt-4 text-sm text-foreground/80">
-              Если вопрос срочный — звоните{" "}
+              Если вопрос срочный - звоните{" "}
               <a href="tel:+79170284011" className="text-bordeaux font-medium">+7 917 028-40-11</a>.
             </p>
             <Button onClick={close} className="mt-5 rounded-full bg-bordeaux hover:bg-bordeaux/90 text-white">

@@ -14,7 +14,7 @@ type Step = {
 };
 
 const steps: Step[] = [
-  { key: "volume", question: "Сколько подарков планируете?", options: ["До 100", "100–500", "500–1000", "Более 1000"] },
+  { key: "volume", question: "Сколько подарков планируете?", options: ["До 100", "100-500", "500-1000", "Более 1000"] },
   { key: "branding", question: "Нужно ли брендирование?", options: ["Не нужно", "Логотип на упаковке", "Полный индивидуальный дизайн"] },
   { key: "audience", question: "Для кого подарки?", options: ["Сотрудникам", "Детям сотрудников", "Партнёрам и клиентам", "Промо / мероприятие"] },
 ];
@@ -58,7 +58,7 @@ export function Quiz() {
         email: r.data.email || undefined,
         company: r.data.company,
         quantity: answers.volume,
-        comment: `Брендирование: ${answers.branding ?? "—"}. Аудитория: ${answers.audience ?? "—"}.`,
+        comment: `Брендирование: ${answers.branding ?? "-"}. Аудитория: ${answers.audience ?? "-"}.`,
         source: "quiz",
       });
       setDone(true);
@@ -89,7 +89,7 @@ export function Quiz() {
             Не знаете что выбрать? <span className="text-bordeaux">Подберём за вас</span>
           </h2>
           <p className="mt-3 text-muted-foreground">
-            Ответьте на&nbsp;5 коротких вопросов — пришлём подборку с&nbsp;ценой за&nbsp;штуку под ваш тираж и&nbsp;КП с&nbsp;гарантией сроков.
+            Ответьте на&nbsp;5 коротких вопросов - пришлём подборку с&nbsp;ценой за&nbsp;штуку под ваш тираж и&nbsp;КП с&nbsp;гарантией сроков.
           </p>
         </div>
 
@@ -135,7 +135,7 @@ export function Quiz() {
                   <h3 className="font-display mt-5 text-2xl sm:text-3xl">Спасибо!</h3>
                   <p className="mt-3 text-muted-foreground">
                     Пришлём расчёт и презентацию в течение рабочего дня.
-                    <br />А пока загляните в готовые наборы — самые популярные решения.
+                    <br />А пока загляните в готовые наборы - самые популярные решения.
                   </p>
                   <Button
                     onClick={goCatalog}

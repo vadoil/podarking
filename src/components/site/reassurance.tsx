@@ -33,7 +33,7 @@ export function Reassurance() {
             Работа с юрлицами · договор · закрывающие
           </span>
           <h2 className="font-display mt-4 text-3xl sm:text-4xl lg:text-5xl">
-            Свежий продукт, точно в&nbsp;срок — <span className="text-bordeaux">без вашей головной боли</span>
+            Свежий продукт, точно в&nbsp;срок - <span className="text-bordeaux">без вашей головной боли</span>
           </h2>
           <p className="mt-4 text-muted-foreground">
             Контроль сроков годности на&nbsp;каждой партии, персональный менеджер и&nbsp;единая ответственность за&nbsp;результат: от&nbsp;первого звонка до&nbsp;подписания закрывающих.

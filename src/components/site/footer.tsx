@@ -54,7 +54,7 @@ export function Footer() {
 
         <div className="divider-gold mt-12 opacity-30" />
         <div className="mt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs text-background/55">
-          <div>© {new Date().getFullYear()} Новогодний.Дом — корпоративные сладкие подарки.</div>
+          <div>© {new Date().getFullYear()} Новогодний.Дом - корпоративные сладкие подарки.</div>
           <div className="flex gap-5">
             <a href="#" className="hover:text-gold">Политика конфиденциальности</a>
             <a href="#" className="hover:text-gold">Договор оферты</a>

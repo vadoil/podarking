@@ -44,7 +44,7 @@ export function ContactChannels() {
     try {
       await submitLead({
         name: "Подписка на рассылку",
-        phone: "—",
+        phone: "-",
         email: r.data,
         source: "newsletter",
       });
@@ -60,10 +60,10 @@ export function ContactChannels() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl">
-            Забронируйте цену сезона — <span className="text-bordeaux">свяжитесь удобным способом</span>
+            Забронируйте цену сезона - <span className="text-bordeaux">свяжитесь удобным способом</span>
           </h2>
           <p className="mt-3 text-muted-foreground">
-            Чем раньше заявка — тем выше приоритет производства и&nbsp;ниже цена за&nbsp;штуку. Менеджер ответит в&nbsp;течение рабочего часа.
+            Чем раньше заявка - тем выше приоритет производства и&nbsp;ниже цена за&nbsp;штуку. Менеджер ответит в&nbsp;течение рабочего часа.
           </p>
         </div>
 
@@ -164,7 +164,7 @@ export function ContactChannels() {
               <div>
                 <h3 className="font-display text-xl text-white">Подписка для бизнеса</h3>
                 <p className="mt-1 text-sm text-white/80">
-                  Раз в неделю — новинки и спецпредложения для корпоративных клиентов.
+                  Раз в неделю - новинки и спецпредложения для корпоративных клиентов.
                 </p>
               </div>
               <span className="grid h-11 w-11 place-items-center rounded-xl bg-white/15 text-white">

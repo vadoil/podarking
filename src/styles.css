@@ -5,7 +5,7 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * Design system — light, festive, premium.
+ * Design system - light, festive, premium.
  * Warm cream background, deep bordeaux + warm gold + evergreen accents.
  */
 
@@ -109,7 +109,7 @@
 }
 
 .dark {
-  /* Light theme only — no dark mode for this brand. */
+  /* Light theme only - no dark mode for this brand. */
   --background: oklch(0.995 0.004 80);
   --foreground: oklch(0.205 0.01 60);
 }

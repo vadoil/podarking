@@ -16,7 +16,7 @@ export function UrgencyBanner() {
         <span>
           До Нового года осталось <span className="font-semibold text-gold">{days}</span>{" "}
           {days % 10 === 1 && days % 100 !== 11 ? "день" : days % 10 >= 2 && days % 10 <= 4 && (days % 100 < 10 || days % 100 >= 20) ? "дня" : "дней"}
-          {" "}— успейте разместить заказ к&nbsp;корпоративу
+          {" "}- успейте разместить заказ к&nbsp;корпоративу
         </span>
       </div>
     </div>

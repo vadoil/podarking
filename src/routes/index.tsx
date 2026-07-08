@@ -28,7 +28,7 @@ import { MobileStickyCTA } from "@/components/site/mobile-sticky-cta";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Сладкие новогодние подарки оптом для бизнеса — Новогодний.Дом" },
+      { title: "Сладкие новогодние подарки оптом для бизнеса - Новогодний.Дом" },
       {
         name: "description",
         content:
