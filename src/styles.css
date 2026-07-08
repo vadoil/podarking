@@ -46,7 +46,7 @@
   --color-cream: var(--cream);
 
   --font-display: "Playfair Display", "Cormorant Garamond", Georgia, serif;
-  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-sans: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
 
   --shadow-soft: 0 4px 14px -6px color-mix(in oklab, var(--bordeaux) 12%, transparent);
   --shadow-card: 0 12px 32px -16px color-mix(in oklab, var(--bordeaux) 22%, transparent);
