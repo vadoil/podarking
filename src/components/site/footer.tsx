@@ -25,7 +25,7 @@ export function Footer() {
               <li><a href="tel:+79170284011" className="inline-flex items-center gap-2 text-background/85 hover:text-gold"><Phone className="h-4 w-4" />+7 917 028-40-11</a></li>
               <li><a href="tel:+79013880777" className="inline-flex items-center gap-2 text-background/85 hover:text-gold"><Phone className="h-4 w-4" />+7 901 388-07-77</a></li>
               <li><a href="mailto:aliva063@xmail.ru" className="inline-flex items-center gap-2 text-background/85 hover:text-gold"><Mail className="h-4 w-4" />aliva063@xmail.ru</a></li>
-              <li><a href="#" className="inline-flex items-center gap-2 text-background/85 hover:text-gold"><MessageCircle className="h-4 w-4" />WhatsApp</a></li>
+              
               <li><a href="https://t.me/new_world10RM?text=Заявка%20по%20новогодним%20подаркам" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-background/85 hover:text-gold"><Send className="h-4 w-4" />@new_world10RM</a></li>
             </ul>
           </div>
