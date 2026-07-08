@@ -36,6 +36,7 @@ export function Catalog() {
   const [pack, setPack] = useState<(typeof PACKAGING)[number]>("Все");
   const [aud, setAud] = useState<(typeof AUDIENCE)[number]>("Все");
   const [active, setActive] = useState<GiftSet | null>(null);
+  const [visible, setVisible] = useState(6);
 
   const filtered = useMemo(() => {
     return data.filter((s) =>
@@ -44,6 +45,9 @@ export function Catalog() {
       (aud === "Все" || s.audience === aud),
     );
   }, [data, budget, pack, aud]);
+
+  const shown = filtered.slice(0, visible);
+  const hasMore = filtered.length > visible;
 
   return (
     <section id="catalog" className="py-20 sm:py-24 bg-cream/60">
