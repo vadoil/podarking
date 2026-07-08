@@ -59,8 +59,10 @@ export function LeadMagnet({ onLead }: { onLead: (channel?: "email" | "telegram"
                 </div>
               </button>
 
-              <button
-                onClick={() => onLead("telegram")}
+              <a
+                href="https://t.me/new_world10RM?text=Заявка%20по%20новогодним%20подаркам"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group relative overflow-hidden rounded-2xl border hairline bg-background p-5 text-left shadow-soft transition-all hover:-translate-y-0.5 hover:shadow-card"
               >
                 <div className="flex items-center gap-4">
@@ -69,10 +71,10 @@ export function LeadMagnet({ onLead }: { onLead: (channel?: "email" | "telegram"
                   </div>
                   <div className="flex-1">
                     <div className="font-display text-lg leading-tight">Получить в Telegram</div>
-                    <div className="text-xs text-muted-foreground">Удобно посмотреть и переслать коллегам</div>
+                    <div className="text-xs text-muted-foreground">Напишем в @new_world10RM — заявка по новогодним подаркам</div>
                   </div>
                 </div>
-              </button>
+              </a>
 
               <p className="mt-1 inline-flex items-center justify-center gap-1.5 text-center text-xs text-muted-foreground">
                 <Zap className="h-3 w-3 text-gold" />
