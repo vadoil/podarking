@@ -19,7 +19,7 @@ export function Cases() {
   return (
     <section id="cases" className="py-20 sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <SectionHeading eyebrow="Кейсы и клиенты" title="Нам доверяют компании из разных отраслей" />
+        <SectionHeading eyebrow="Кейсы и клиенты" title="От региональных заводов до федеральных сетей — доставляем в срок" subtitle="Реальные проекты сезона: тиражи, состав, брендирование и сроки." />
 
         <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
           {LOGOS.map((l) => (
