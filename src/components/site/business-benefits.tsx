@@ -19,7 +19,7 @@ export function BusinessBenefits() {
             HR-бренд · лояльность · мотивация
           </span>
           <h2 className="font-display mt-4 text-3xl sm:text-4xl lg:text-5xl">
-            Подарок - это <span className="text-bordeaux">инструмент</span>, а не сладость
+            Подарок - это <span className="text-bordeaux">забота</span>
           </h2>
           <p className="mt-4 text-muted-foreground">
             Один хороший набор возвращается лояльностью сотрудников, партнёров и&nbsp;клиентов на&nbsp;весь следующий год.
