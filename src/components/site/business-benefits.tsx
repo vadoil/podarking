@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Heart, Users, Award, Handshake, Sparkles } from "lucide-react";
+import { Heart, Users, Award, Handshake, Sparkles, TrendingUp } from "lucide-react";
 
 const items = [
   { icon: Heart, t: "Повышение лояльности сотрудников", d: "Праздничное внимание, которое запоминается до следующего года." },
@@ -7,6 +7,7 @@ const items = [
   { icon: Award, t: "Укрепление HR-бренда", d: "Конкурентное преимущество в найме и удержании команды." },
   { icon: Handshake, t: "Внимание к партнёрам и клиентам", d: "Поддерживает отношения и открывает двери для новых сделок." },
   { icon: Sparkles, t: "Позитивная атмосфера в коллективе", d: "Совместный праздник укрепляет команду и культуру." },
+  { icon: TrendingUp, t: "Рост продаж и повторных сделок", d: "Тёплый жест перед Новым годом возвращается заказами и рекомендациями в следующем." },
 ];
 
 export function BusinessBenefits() {
