@@ -18,7 +18,9 @@ const BOXES = [
 const MARQUEE = [
   "/boxes/box-1.webp", "/boxes/box-2.webp", "/boxes/box-3.webp", "/boxes/box-4.webp",
   "/boxes/box-5.jpg",  "/boxes/box-6.jpg",  "/boxes/box-7.jpg",  "/boxes/box-8.webp",
+  "/boxes/box-9.png",  "/boxes/box-10.png",
 ];
+const MARQUEE_LOOP = [...MARQUEE, ...MARQUEE, ...MARQUEE, ...MARQUEE];
 
 export function Hero({ onLead, onCatalog, onLeadChannel }: HeroProps) {
   const handleChannel = (c: "email" | "telegram") => (onLeadChannel ? onLeadChannel(c) : onLead());
