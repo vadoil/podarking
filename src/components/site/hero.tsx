@@ -11,7 +11,7 @@ type HeroProps = {
 const BOXES = [
   { src: "/boxes/box-2.webp", rot: -6,  top: "4%",  left: "8%",  w: "56%", delay: 0,   z: 30 },
   { src: "/boxes/box-6.jpg",  rot:  4,  top: "10%", left: "48%", w: "52%", delay: 0.4, z: 20 },
-  { src: "/boxes/box-1.webp", rot: -3,  top: "46%", left: "2%",  w: "44%", delay: 0.8, z: 25 },
+  { src: "/boxes/box-9.png",  rot: -3,  top: "46%", left: "2%",  w: "44%", delay: 0.8, z: 25 },
   { src: "/boxes/box-7.jpg",  rot:  6,  top: "52%", left: "44%", w: "50%", delay: 1.2, z: 35 },
 ];
 
