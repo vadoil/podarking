@@ -100,13 +100,13 @@ export function ContactChannels() {
                 </a>
               </li>
               <li>
-                <a href="mailto:b2b@podarking.ru" className="group flex items-center gap-3">
+                <a href="mailto:aliva063@xmail.ru" className="group flex items-center gap-3">
                   <span className="grid h-11 w-11 place-items-center rounded-xl bg-bordeaux/10 text-bordeaux">
                     <Mail className="h-5 w-5" />
                   </span>
                   <span>
                     <span className="block text-[11px] uppercase tracking-widest text-muted-foreground">E-mail отдела продаж</span>
-                    <span className="block font-display text-lg text-foreground group-hover:text-bordeaux">b2b@podarking.ru</span>
+                    <span className="block font-display text-lg text-foreground group-hover:text-bordeaux">aliva063@xmail.ru</span>
                   </span>
                 </a>
               </li>
