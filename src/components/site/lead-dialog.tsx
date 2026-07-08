@@ -105,7 +105,7 @@ export function LeadDialog({
             </div>
             <p className="mt-4 text-sm text-foreground/80">
               Если вопрос срочный — звоните{" "}
-              <a href="tel:+78001234567" className="text-bordeaux font-medium">+7 800 123-45-67</a>.
+              <a href="tel:+79170284011" className="text-bordeaux font-medium">+7 917 028-40-11</a>.
             </p>
             <Button onClick={close} className="mt-5 rounded-full bg-bordeaux hover:bg-bordeaux/90 text-white">
               Закрыть
