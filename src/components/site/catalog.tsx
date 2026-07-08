@@ -10,7 +10,7 @@ import type { GiftSet } from "@/data/types";
 import { ProductSheet } from "./product-sheet";
 
 const BUDGET = ["Все", "Эконом", "Стандарт", "Премиум"] as const;
-const PACKAGING = ["Все", "Картон", "Жесть", "Текстиль", "Дерево"] as const;
+const PACKAGING = ["Все", "Картон", "Пакет", "Жесть", "Текстиль", "Дерево"] as const;
 const AUDIENCE = ["Все", "взрослый", "детский"] as const;
 
 function Chip({ active, onClick, children }: { active: boolean; onClick: () => void; children: React.ReactNode }) {
