@@ -57,13 +57,13 @@ export function Tiers({ onLead }: { onLead: () => void }) {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <span className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold-soft/40 px-3 py-1 text-xs font-medium text-bordeaux">
-            Чем крупнее тираж — тем ниже цена
+            Чем крупнее тираж - тем ниже цена
           </span>
           <h2 className="font-display mt-4 text-3xl sm:text-4xl lg:text-5xl">
-            Выберите формат — и <span className="text-bordeaux">сэкономьте до&nbsp;30%</span> на объёме
+            Выберите формат - и <span className="text-bordeaux">сэкономьте до&nbsp;30%</span> на объёме
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Работаем напрямую с&nbsp;кондитерскими заводами: без посредников, без наценок. Фиксируем цену в&nbsp;КП — она не&nbsp;изменится в&nbsp;декабрьский ажиотаж.
+            Работаем напрямую с&nbsp;кондитерскими заводами: без посредников, без наценок. Фиксируем цену в&nbsp;КП - она не&nbsp;изменится в&nbsp;декабрьский ажиотаж.
           </p>
         </div>
 

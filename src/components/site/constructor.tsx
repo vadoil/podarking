@@ -9,7 +9,7 @@ import { toast } from "sonner";
 import { submitLead } from "@/hooks/use-lead";
 
 const PACK = ["Картон", "Жесть", "Текстиль", "Дерево"];
-const BUDGET = ["до 500 ₽", "500–1000 ₽", "1000–2000 ₽", "от 2000 ₽"];
+const BUDGET = ["до 500 ₽", "500-1000 ₽", "1000-2000 ₽", "от 2000 ₽"];
 const THEME = ["Классика", "Минимализм", "Детский", "Премиум VIP", "Брендированный"];
 
 export function Constructor() {
@@ -34,7 +34,7 @@ export function Constructor() {
         phone: contact.phone,
         quantity: qty,
         budget,
-        comment: `Конструктор: упаковка — ${pack}, тема — ${theme}. ${contact.comment}`.trim(),
+        comment: `Конструктор: упаковка - ${pack}, тема - ${theme}. ${contact.comment}`.trim(),
         source: "constructor",
       });
       setDone(true);
@@ -53,8 +53,8 @@ export function Constructor() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 relative">
         <SectionHeading
           eyebrow="Конструктор"
-          title="Соберите подарок сами — по цене от завода"
-          subtitle="Выбираете состав и упаковку — мы фиксируем цену за штуку в КП. Без сюрпризов, без наценок посредников, без онлайн-оплаты."
+          title="Соберите подарок сами - по цене от завода"
+          subtitle="Выбираете состав и упаковку - мы фиксируем цену за штуку в КП. Без сюрпризов, без наценок посредников, без онлайн-оплаты."
         />
 
         <motion.div

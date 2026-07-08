@@ -47,7 +47,7 @@ export function Hero({ onLead, onCatalog, onLeadChannel }: HeroProps) {
               <Sparkles className="relative h-3.5 w-3.5 text-gold" />
             </span>
             <span className="relative tracking-wide">
-              Сезон <span className="text-shimmer font-display text-sm">2026–2027</span>
+              Сезон <span className="text-shimmer font-display text-sm">2026-2027</span>
               <span className="mx-2 text-gold/60">·</span>
               Открыт приём заявок
             </span>
@@ -61,8 +61,8 @@ export function Hero({ onLead, onCatalog, onLeadChannel }: HeroProps) {
           </h1>
 
           <p className="mt-6 max-w-xl text-base sm:text-lg text-muted-foreground leading-relaxed">
-            Собираем корпоративные новогодние подарки индивидуально: состав, упаковка, брендирование&nbsp;— под ваши цели и бюджет.
-            Быстро и&nbsp;надёжно&nbsp;— от&nbsp;компании, которая специализируется на&nbsp;оптовых поставках продуктов питания
+            Собираем корпоративные новогодние подарки индивидуально: состав, упаковка, брендирование&nbsp;- под ваши цели и бюджет.
+            Быстро и&nbsp;надёжно&nbsp;- от&nbsp;компании, которая специализируется на&nbsp;оптовых поставках продуктов питания
             с&nbsp;заводов России и&nbsp;Беларуси.
           </p>
 
