@@ -111,13 +111,13 @@ export function ContactChannels() {
                 </a>
               </li>
               <li>
-                <a href="https://t.me/podarking_b2b" target="_blank" rel="noreferrer" className="group flex items-center gap-3">
+                <a href="https://t.me/new_world10RM" target="_blank" rel="noreferrer" className="group flex items-center gap-3">
                   <span className="grid h-11 w-11 place-items-center rounded-xl bg-evergreen/10 text-evergreen">
                     <Send className="h-5 w-5" />
                   </span>
                   <span>
                     <span className="block text-[11px] uppercase tracking-widest text-muted-foreground">Telegram</span>
-                    <span className="block font-display text-lg text-foreground group-hover:text-bordeaux">@podarking_b2b</span>
+                    <span className="block font-display text-lg text-foreground group-hover:text-bordeaux">@new_world10RM</span>
                   </span>
                 </a>
               </li>
