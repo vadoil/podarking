@@ -24,8 +24,7 @@ export function LeadMagnet({ onLead }: { onLead: (channel?: "email" | "telegram"
               </span>
 
               <h2 className="font-display mt-4 text-3xl leading-tight sm:text-4xl lg:text-5xl">
-                Получите <span className="text-bordeaux">цены с завода</span><br />
-                - до&nbsp;того, как поднимутся все остальные
+                Получите <span className="text-bordeaux">коммерческое предложение</span> первыми
               </h2>
 
               <ul className="mt-6 space-y-2 text-sm text-foreground/80">

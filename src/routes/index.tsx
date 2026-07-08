@@ -13,7 +13,7 @@ import { SocialProof } from "@/components/site/social-proof";
 import { Stats } from "@/components/site/stats";
 import { Reassurance } from "@/components/site/reassurance";
 import { ContactChannels } from "@/components/site/contact-channels";
-import { Segments } from "@/components/site/segments";
+
 import { Catalog } from "@/components/site/catalog";
 import { Constructor } from "@/components/site/constructor";
 import { Branding } from "@/components/site/branding";
@@ -70,7 +70,7 @@ function Index() {
           <Tiers onLead={() => openLead()} />
           <BusinessBenefits />
           <LeadMagnet onLead={(c) => openLead(c ?? null)} />
-          <Segments />
+          
           <Catalog />
           <Quiz />
           <Constructor />
