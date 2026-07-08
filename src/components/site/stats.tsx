@@ -4,7 +4,7 @@ import { motion, useInView } from "framer-motion";
 type Stat = { value: number; suffix?: string; label: string; decimals?: number };
 
 const stats: Stat[] = [
-  { value: 12, suffix: "+", label: "лет на рынке корпоративных подарков" },
+  { value: 12, suffix: "+", label: "на рынке поставки продуктов питания B2B" },
   { value: 1800, suffix: "+", label: "реализованных B2B-проектов" },
   { value: 540000, label: "наборов отгружено за последние сезоны" },
   { value: 187, label: "городов доставки по России" },

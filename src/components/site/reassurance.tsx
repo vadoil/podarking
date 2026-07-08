@@ -19,7 +19,7 @@ const items = [
   },
   {
     icon: PackageCheck,
-    t: "Под ключ от и до",
+    t: "Работаем с НДС",
     d: "Подбор → производство и сборка → маркировка → доставка по всей России.",
   },
 ];
@@ -30,7 +30,7 @@ export function Reassurance() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <span className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold-soft/40 px-3 py-1 text-xs font-medium text-bordeaux">
-            Работа с юрлицами · договор · закрывающие
+            Работа с юрлицами · договор · закрывающие документы
           </span>
           <h2 className="font-display mt-4 text-3xl sm:text-4xl lg:text-5xl">
             Свежий продукт, точно в&nbsp;срок - <span className="text-bordeaux">без вашей головной боли</span>
