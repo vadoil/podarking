@@ -30,13 +30,13 @@ export function Reassurance() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <span className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold-soft/40 px-3 py-1 text-xs font-medium text-bordeaux">
-            Работа с юрлицами
+            Работа с юрлицами · договор · закрывающие
           </span>
           <h2 className="font-display mt-4 text-3xl sm:text-4xl lg:text-5xl">
-            Берём все хлопоты <span className="text-bordeaux">на себя</span>
+            Свежий продукт, точно в&nbsp;срок — <span className="text-bordeaux">без вашей головной боли</span>
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Вы согласовываете концепцию — мы делаем всё остальное.
+            Контроль сроков годности на&nbsp;каждой партии, персональный менеджер и&nbsp;единая ответственность за&nbsp;результат: от&nbsp;первого звонка до&nbsp;подписания закрывающих.
           </p>
         </div>
 
