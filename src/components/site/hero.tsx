@@ -98,7 +98,7 @@ export function Hero({ onLead, onCatalog, onLeadChannel }: HeroProps) {
             {[
               { icon: Factory, t: "Прямые поставки с заводов" },
               { icon: ShieldCheck, t: "Сертификаты качества" },
-              { icon: Boxes, t: "Тираж от 50 шт" },
+              { icon: Boxes, t: "Тираж от 500 шт" },
               { icon: Truck, t: "Доставка по РФ" },
             ].map(({ icon: Icon, t }) => (
               <li key={t} className="flex items-start gap-2 text-foreground/80">
