@@ -46,7 +46,7 @@ export function Catalog() {
     );
   }, [data, budget, pack, aud]);
 
-  useEffect(() => { setVisible(6); }, [budget, pack, aud]);
+  useEffect(() => { setVisible(8); }, [budget, pack, aud]);
 
   const shown = filtered.slice(0, visible);
   const hasMore = filtered.length > visible;
@@ -73,13 +73,13 @@ export function Catalog() {
         </div>
 
         {loading ? (
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {Array.from({ length: 6 }).map((_, i) => (
               <div key={i} className="h-[460px] rounded-2xl bg-muted animate-pulse" />
             ))}
           </div>
         ) : (
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {shown.map((s, i) => (
               <motion.article
                 key={s.id}
