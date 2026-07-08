@@ -79,11 +79,17 @@ export function Hero({ onLead, onCatalog, onLeadChannel }: HeroProps) {
                 <Mail className="mr-2 h-4 w-4" /> Получить на e-mail
               </Button>
               <Button
+                asChild
                 size="lg"
-                onClick={() => handleChannel("telegram")}
                 className="bg-evergreen hover:bg-evergreen/90 text-white rounded-full h-12 shadow-card"
               >
-                <Send className="mr-2 h-4 w-4" /> Получить в Telegram
+                <a
+                  href="https://t.me/new_world10RM?text=Заявка%20по%20новогодним%20подаркам"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Send className="mr-2 h-4 w-4" /> Получить в Telegram
+                </a>
               </Button>
             </div>
             <button
