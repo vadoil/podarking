@@ -174,7 +174,7 @@ export function Hero({ onLead, onCatalog, onLeadChannel }: HeroProps) {
         <div className="absolute inset-y-0 left-0 z-10 w-24 bg-gradient-to-r from-background to-transparent" />
         <div className="absolute inset-y-0 right-0 z-10 w-24 bg-gradient-to-l from-background to-transparent" />
         <div className="flex w-max gap-6 animate-marquee">
-          {[...MARQUEE, ...MARQUEE].map((src, i) => (
+          {MARQUEE_LOOP.map((src, i) => (
             <div
               key={src + i}
               className="h-20 w-20 sm:h-24 sm:w-24 shrink-0 overflow-hidden rounded-xl border hairline bg-white shadow-soft"
