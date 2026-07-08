@@ -46,6 +46,8 @@ export function Catalog() {
     );
   }, [data, budget, pack, aud]);
 
+  useEffect(() => { setVisible(6); }, [budget, pack, aud]);
+
   const shown = filtered.slice(0, visible);
   const hasMore = filtered.length > visible;
 
