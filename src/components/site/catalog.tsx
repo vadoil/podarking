@@ -78,7 +78,7 @@ export function Catalog() {
           </div>
         ) : (
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {filtered.map((s, i) => (
+            {shown.map((s, i) => (
               <motion.article
                 key={s.id}
                 initial={{ opacity: 0, y: 20 }}
