@@ -11,10 +11,10 @@ export function SocialProof() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl">
-            Нам доверяют компании из <span className="text-bordeaux">разных отраслей</span>
+            Более 1&nbsp;800 компаний уже доверили нам <span className="text-bordeaux">корпоративный Новый год</span>
           </h2>
           <p className="mt-3 text-sm text-muted-foreground">
-            От региональных производств до федеральных ритейлеров — собираем подарки для команд любого масштаба.
+            От региональных производств до федеральных ритейлеров — собираем подарки для команд любого масштаба и возвращаемся к нам сезон за сезоном.
           </p>
         </div>
 

@@ -20,12 +20,12 @@ export function LeadMagnet({ onLead }: { onLead: (channel?: "email" | "telegram"
             <div>
               <span className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold-soft/40 px-3 py-1 text-xs font-medium text-bordeaux">
                 <FileText className="h-3.5 w-3.5" />
-                Бесплатная презентация
+                Бесплатно · за 5 минут
               </span>
 
               <h2 className="font-display mt-4 text-3xl leading-tight sm:text-4xl lg:text-5xl">
-                Получите <span className="text-bordeaux">презентацию</span><br />
-                с подарками, ценами и сроками
+                Получите <span className="text-bordeaux">цены с завода</span><br />
+                — до&nbsp;того, как поднимутся все остальные
               </h2>
 
               <ul className="mt-6 space-y-2 text-sm text-foreground/80">

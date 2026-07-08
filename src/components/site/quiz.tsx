@@ -83,13 +83,13 @@ export function Quiz() {
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <span className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-background px-3 py-1 text-xs font-medium text-bordeaux">
-            Подбор за 60 секунд
+            Персональный расчёт за 60 секунд
           </span>
           <h2 className="font-display mt-4 text-3xl sm:text-4xl lg:text-5xl">
-            Подберём подарок под <span className="text-bordeaux">ваш бюджет и задачу</span>
+            Не знаете что выбрать? <span className="text-bordeaux">Подберём за вас</span>
           </h2>
           <p className="mt-3 text-muted-foreground">
-            Ответьте на 5 коротких вопросов — пришлём персональный расчёт и презентацию.
+            Ответьте на&nbsp;5 коротких вопросов — пришлём подборку с&nbsp;ценой за&nbsp;штуку под ваш тираж и&nbsp;КП с&nbsp;гарантией сроков.
           </p>
         </div>
 

@@ -15,12 +15,16 @@ export function BusinessBenefits() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <span className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-background px-3 py-1 text-xs font-medium text-bordeaux">
-            Зачем это вашей компании
+            HR-бренд · лояльность · мотивация
           </span>
           <h2 className="font-display mt-4 text-3xl sm:text-4xl lg:text-5xl">
             Подарок — это <span className="text-bordeaux">инструмент</span>, а не сладость
           </h2>
+          <p className="mt-4 text-muted-foreground">
+            Один хороший набор возвращается лояльностью сотрудников, партнёров и&nbsp;клиентов на&nbsp;весь следующий год.
+          </p>
         </div>
+
 
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((it, i) => {

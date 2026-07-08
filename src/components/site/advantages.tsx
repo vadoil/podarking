@@ -16,8 +16,9 @@ export function Advantages() {
     <section id="advantages" className="py-20 sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          eyebrow="Преимущества"
-          title="Почему B2B-клиенты выбирают нас"
+          eyebrow="Почему мы"
+          title="Прямо с завода — без наценок, посредников и задержек"
+          subtitle="Минимальная цена, гарантированная свежесть и сроки — за счёт прямых контрактов и собственной логистики."
         />
 
         <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

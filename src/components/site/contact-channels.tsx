@@ -60,10 +60,10 @@ export function ContactChannels() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl">
-            Свяжитесь <span className="text-bordeaux">удобным способом</span>
+            Забронируйте цену сезона — <span className="text-bordeaux">свяжитесь удобным способом</span>
           </h2>
           <p className="mt-3 text-muted-foreground">
-            Менеджер ответит в течение рабочего часа.
+            Чем раньше заявка — тем выше приоритет производства и&nbsp;ниже цена за&nbsp;штуку. Менеджер ответит в&nbsp;течение рабочего часа.
           </p>
         </div>
 

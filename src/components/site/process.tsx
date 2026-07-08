@@ -13,7 +13,7 @@ export function Process() {
   return (
     <section id="process" className="py-20 sm:py-24 bg-cream/60">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <SectionHeading eyebrow="Как мы работаем" title="Пять шагов до подарков под ёлкой" />
+        <SectionHeading eyebrow="Как мы работаем" title="От заявки до подарков под ёлкой — 5 понятных шагов" subtitle="Прозрачный процесс с закреплёнными сроками на каждом этапе — вы всегда знаете, где ваш заказ." />
 
         <div className="mt-14 relative">
           <div className="hidden lg:block absolute left-0 right-0 top-10 h-px divider-gold" />

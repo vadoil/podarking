@@ -47,10 +47,10 @@ export function Stats() {
       <div className="mx-auto max-w-7xl px-4 text-white sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <span className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-3 py-1 text-xs font-medium text-white backdrop-blur">
-            Цифры — лучший аргумент
+            Цифры, которые говорят сами
           </span>
           <h2 className="font-display mt-4 text-3xl sm:text-4xl lg:text-5xl text-white">
-            Опыт, которому <span className="text-gold">доверяют</span>
+            12 лет делаем сезон <span className="text-gold">возможным</span>
           </h2>
         </div>
 
