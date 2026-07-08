@@ -83,8 +83,19 @@ export function ContactChannels() {
                     <Phone className="h-5 w-5" />
                   </span>
                   <span>
-                    <span className="block text-[11px] uppercase tracking-widest text-muted-foreground">Бесплатно по РФ</span>
-                    <span className="block font-display text-lg text-foreground group-hover:text-bordeaux">8 800 123-45-67</span>
+                    <span className="block text-[11px] uppercase tracking-widest text-muted-foreground">Отдел корпоративных продаж</span>
+                    <span className="block font-display text-lg text-foreground group-hover:text-bordeaux">+7 917 028-40-11</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="tel:+79013880777" className="group flex items-center gap-3">
+                  <span className="grid h-11 w-11 place-items-center rounded-xl bg-bordeaux/10 text-bordeaux">
+                    <Phone className="h-5 w-5" />
+                  </span>
+                  <span>
+                    <span className="block text-[11px] uppercase tracking-widest text-muted-foreground">Менеджер проектов</span>
+                    <span className="block font-display text-lg text-foreground group-hover:text-bordeaux">+7 901 388-07-77</span>
                   </span>
                 </a>
               </li>
