@@ -23,6 +23,8 @@ export function BusinessBenefits() {
           <p className="mt-4 text-muted-foreground">
             Один хороший набор возвращается лояльностью сотрудников, партнёров и&nbsp;клиентов на&nbsp;весь следующий год.
           </p>
+        </div>
+
 
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((it, i) => {
