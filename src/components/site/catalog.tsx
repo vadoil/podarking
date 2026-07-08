@@ -153,6 +153,19 @@ export function Catalog() {
           </div>
         )}
 
+        {!loading && hasMore && (
+          <div className="mt-10 flex justify-center">
+            <Button
+              size="lg"
+              variant="outline"
+              onClick={() => setVisible((v) => v + 6)}
+              className="rounded-full border-bordeaux/25 text-bordeaux hover:bg-bordeaux hover:text-white px-8"
+            >
+              Загрузить ещё · осталось {filtered.length - visible}
+            </Button>
+          </div>
+        )}
+
         {!loading && filtered.length === 0 && (
           <p className="mt-12 text-center text-muted-foreground">Ничего не найдено по выбранным фильтрам.</p>
         )}
