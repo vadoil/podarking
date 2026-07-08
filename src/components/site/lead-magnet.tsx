@@ -31,7 +31,7 @@ export function LeadMagnet({ onLead }: { onLead: (channel?: "email" | "telegram"
               <ul className="mt-6 space-y-2 text-sm text-foreground/80">
                 {[
                   "PDF-каталог на сезон 2025–2026",
-                  "Цены по тиражам от 50 до 10 000+ шт",
+                  "Цены по тиражам от 500 до 10 000+ шт",
                   "Сроки производства и доставки по РФ",
                   "Примеры брендирования и упаковки",
                 ].map((t) => (
