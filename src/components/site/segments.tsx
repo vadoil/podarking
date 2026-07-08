@@ -15,8 +15,8 @@ export function Segments() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Для кого"
-          title="Подарки под любую корпоративную задачу"
-          subtitle="Подбираем состав, упаковку и тираж под цели вашей компании."
+          title="Один поставщик — все внутренние аудитории"
+          subtitle="Сотрудники, дети, партнёры, VIP. Соберём под каждую задачу и удержим единую цену — без переплаты за посредников."
         />
         <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {SEG.map(({ icon: Icon, t, d }, i) => (
