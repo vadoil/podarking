@@ -55,14 +55,15 @@ export function Hero({ onLead, onCatalog, onLeadChannel }: HeroProps) {
           </motion.span>
 
           <h1 className="font-display mt-6 text-[2.4rem] leading-[1.02] sm:text-5xl lg:text-[4rem]">
-            Корпоративные<br />
-            <span className="text-shimmer">новогодние подарки</span><br />
-            <span className="text-foreground/85">с заводов России и Беларуси</span>
+            Любой подарок,<br />
+            <span className="text-shimmer">под любую задачу и бюджет</span><br />
+            <span className="text-foreground/85">оперативно и в любом объёме</span>
           </h1>
 
           <p className="mt-6 max-w-xl text-base sm:text-lg text-muted-foreground leading-relaxed">
-            Сладкие наборы в&nbsp;брендированных коробках&nbsp;— для сотрудников, их&nbsp;детей,
-            партнёров и&nbsp;клиентов. Любой бюджет, тираж от&nbsp;50&nbsp;шт, доставка по&nbsp;всей России.
+            Собираем корпоративные новогодние подарки индивидуально: состав, упаковка, брендирование&nbsp;— под ваши цели и бюджет.
+            Быстро и&nbsp;надёжно&nbsp;— от&nbsp;компании, которая специализируется на&nbsp;оптовых поставках продуктов питания
+            с&nbsp;заводов России и&nbsp;Беларуси.
           </p>
 
           <div className="mt-8 rounded-2xl border hairline bg-card/85 p-4 shadow-card backdrop-blur">
