@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import { Plus, Info, Weight, Package } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -36,6 +36,7 @@ export function Catalog() {
   const [pack, setPack] = useState<(typeof PACKAGING)[number]>("Все");
   const [aud, setAud] = useState<(typeof AUDIENCE)[number]>("Все");
   const [active, setActive] = useState<GiftSet | null>(null);
+  const [visible, setVisible] = useState(6);
 
   const filtered = useMemo(() => {
     return data.filter((s) =>
@@ -44,6 +45,11 @@ export function Catalog() {
       (aud === "Все" || s.audience === aud),
     );
   }, [data, budget, pack, aud]);
+
+  useEffect(() => { setVisible(6); }, [budget, pack, aud]);
+
+  const shown = filtered.slice(0, visible);
+  const hasMore = filtered.length > visible;
 
   return (
     <section id="catalog" className="py-20 sm:py-24 bg-cream/60">
@@ -74,7 +80,7 @@ export function Catalog() {
           </div>
         ) : (
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {filtered.map((s, i) => (
+            {shown.map((s, i) => (
               <motion.article
                 key={s.id}
                 initial={{ opacity: 0, y: 20 }}
@@ -146,6 +152,19 @@ export function Catalog() {
                 </div>
               </motion.article>
             ))}
+          </div>
+        )}
+
+        {!loading && hasMore && (
+          <div className="mt-10 flex justify-center">
+            <Button
+              size="lg"
+              variant="outline"
+              onClick={() => setVisible((v) => v + 6)}
+              className="rounded-full border-bordeaux/25 text-bordeaux hover:bg-bordeaux hover:text-white px-8"
+            >
+              Загрузить ещё · осталось {filtered.length - visible}
+            </Button>
           </div>
         )}
 
