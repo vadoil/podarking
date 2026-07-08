@@ -78,7 +78,7 @@ export function ContactChannels() {
             <h3 className="font-display text-xl">Прямой контакт</h3>
             <ul className="mt-5 space-y-4 text-sm">
               <li>
-                <a href="tel:+78001234567" className="group flex items-center gap-3">
+                <a href="tel:+79170284011" className="group flex items-center gap-3">
                   <span className="grid h-11 w-11 place-items-center rounded-xl bg-bordeaux/10 text-bordeaux">
                     <Phone className="h-5 w-5" />
                   </span>

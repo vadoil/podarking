@@ -46,11 +46,11 @@ export function Header({ onLead }: { onLead: () => void }) {
 
         <div className="flex items-center gap-2">
           <a
-            href="tel:+78001234567"
+            href="tel:+79170284011"
             className="hidden md:inline-flex items-center gap-2 text-sm font-medium text-foreground hover:text-bordeaux"
           >
             <Phone className="h-4 w-4 text-gold" />
-            +7 800 123-45-67
+            +7 917 028-40-11
           </a>
 
           <button
@@ -96,8 +96,8 @@ export function Header({ onLead }: { onLead: () => void }) {
                 {n.label}
               </button>
             ))}
-            <a href="tel:+78001234567" className="text-bordeaux font-medium pt-2">
-              +7 800 123-45-67
+            <a href="tel:+79170284011" className="text-bordeaux font-medium pt-2">
+              +7 917 028-40-11
             </a>
             <Button onClick={() => { setOpen(false); onLead(); }} className="bg-bordeaux hover:bg-bordeaux/90 text-white rounded-full mt-2">
               Получить расчёт

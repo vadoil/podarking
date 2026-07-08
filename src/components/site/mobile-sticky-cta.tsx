@@ -5,7 +5,7 @@ export function MobileStickyCTA({ onLead }: { onLead: () => void }) {
   return (
     <div className="lg:hidden fixed bottom-0 inset-x-0 z-30 border-t hairline bg-background/95 backdrop-blur px-3 py-2.5 flex gap-2 shadow-[0_-8px_24px_-12px_rgba(185,28,28,0.18)]">
       <a
-        href="tel:+78001234567"
+        href="tel:+79170284011"
         className="inline-flex items-center justify-center rounded-full border hairline w-12 h-12 text-bordeaux"
         aria-label="Позвонить"
       >
