@@ -9,7 +9,7 @@ import { Tiers } from "@/components/site/tiers";
 import { BusinessBenefits } from "@/components/site/business-benefits";
 import { LeadMagnet, LeadMagnetStrip } from "@/components/site/lead-magnet";
 import { Quiz } from "@/components/site/quiz";
-import { SocialProof } from "@/components/site/social-proof";
+
 import { Stats } from "@/components/site/stats";
 import { Reassurance } from "@/components/site/reassurance";
 import { ContactChannels } from "@/components/site/contact-channels";
@@ -77,7 +77,7 @@ function Index() {
           <Branding />
           <Reassurance />
           <Stats />
-          <SocialProof />
+          
           <Cases />
           <Advantages />
           <Process />
